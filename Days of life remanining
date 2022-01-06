@@ -1,0 +1,12 @@
+age = input("What is your current age? ")
+ages_int = int(age)
+
+#taking in consideration the person will live till 90 years old
+
+years_left = 90 - ages_int
+days_left = years_left * 365
+weeks_left = years_left * 52
+months_left = years_left * 12
+
+#f-String
+print(f"You have left {days_left} days, {weeks_left } weeks and {months_left} months left")
