@@ -1,0 +1,7 @@
+import random
+
+random_str = random.radint(0,1)
+if random_str ==1:
+  print("Heads"
+ else:
+ print("Tails")
