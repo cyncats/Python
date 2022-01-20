@@ -1,0 +1,49 @@
+import random
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+#Write your code below this line 👇
+choice_user = int(input("What do you choose? 0 for rock, 1 for paper and 2 for scissors "))
+print(" ")
+choice_comp = random.randint(0, 2)
+
+
+
+print(f"computer: {choice_comp}")
+
+if choice_user >= 3 or choice_user < 0:
+  print("Invalid")
+elif choice_user == 0 and choice_comp == 2:
+  print("You win")
+elif choice_comp == 0 and choice_user == 2:
+  print("You loose")
+elif choice_comp > choice_user:
+  print("You lose")
+elif choice_user > choice_comp:
+  print("You lose")  
+elif choice_user == choice_comp:
+  print("It's a draw")
