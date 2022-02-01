@@ -1,0 +1,22 @@
+#loop example, taking a list input by the user, make a sume and taking the average of the all values dividing by the number of the list
+
+student_heights = input("Input a list of student heights ").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+
+total = 0
+for height in student_heights:
+  total += height
+#print(total)
+
+num_std = 0
+for num_std in student_heights:
+  num_std += 1
+#print(num_std)
+
+average = round(total / num_std)
+#version without loop
+#total = sum(student_heights)
+#num_std = len(student_heights)
+#average = round(total / num_std)
+print(average)
