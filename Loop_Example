@@ -10,7 +10,7 @@ for height in student_heights:
 #print(total)
 
 num_std = 0
-for num_std in student_heights:
+for std in student_heights:
   num_std += 1
 #print(num_std)
 
